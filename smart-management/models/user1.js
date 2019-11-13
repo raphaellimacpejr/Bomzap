@@ -2,34 +2,51 @@ const mongoose = require('mongoose');
 const user1Schema = new mongoose.Schema({
     
 //variaveis do scheema
-fullname8: String,
+fullname: String,
 uid: {
-    type: String
+    type: String,
+    unique: true,
 },
-login8: String,
-uid:{
-    type: String
+username:String,
+   
+    
+password: String,
+
+
+cellphone: String,
+
+
+cpf: String,
+
+
+rg: String,
+
+    
+card_number: String,
+
+    
+card_name: String,
+
+    
+security_code: String,
+
+    
+expiration: String,
+
+    
+card: String,
+
+
+plano: String,
+
+                                      
 },
-                                
-email8: String,
-uid: {
-        type: String,
-        lowercase: true                              
-},
-                                       
-address8: {
-cep: { type: Number
-       
-     },
-street: String, 
-},
-password: String
-                               
-                                                                             
-       
-                                    
-}, { timestamps: true, static: false });
-const User1Schema = mongoose.model('User1', user1Schema);
+    
+// Capacitação
+
+                                                                   
+ { timestamps: true, static: false });
+const User1Model = mongoose.model('User1', user1Schema);
 //funções do scheema
 class User1{
     
@@ -40,7 +57,7 @@ class User1{
    */
   static create(user) {
     return new Promise((resolve, reject) => {
-      User1Schema.create(user).then((result) => {
+      User1Model.create(user).then((result) => {
         resolve(result._id);
       }).catch((err) => {
         reject(err);

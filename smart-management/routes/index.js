@@ -28,8 +28,8 @@ router.get('/cap', function(req, res, next) {
 
 router.post('/create',function(req, res, next){
     const user1 = req.body.user1;
+    console.log(user1);
     User1.create(user1).then((id) =>{
-        console.log(user1);
         console.log("-----------------------------------");
         res.redirect('/index');
         console.log(id);
