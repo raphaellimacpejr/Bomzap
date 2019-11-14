@@ -7020,10 +7020,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-@font-face {
-  font-family: 'fonte_logo';
-  src: url("Audiowide-Regular.ttf"); }
-
 .fundo_logo {
   background-image: url("/images/cine2.jpg");
   background-position: center;
@@ -7033,7 +7029,7 @@ a.text-dark:hover, a.text-dark:focus {
 .esp {
   background-color: white;
   width: 100%;
-  height: 1%; }
+  height: 2%; }
 
 .fundo_filmes {
   background-color: black;

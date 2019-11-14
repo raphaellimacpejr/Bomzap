@@ -1,15 +1,13 @@
 const mongoose = require('mongoose');
 const user1Schema = new mongoose.Schema({
-    
+   
 //variaveis do scheema
 fullname: String,
-uid: {
-    type: String,
-    unique: true,
-},
+
+
 username:String,
    
-    
+   
 password: String,
 
 
@@ -21,27 +19,27 @@ cpf: String,
 
 rg: String,
 
-    
+   
 card_number: String,
 
-    
+   
 card_name: String,
 
-    
+   
 security_code: String,
 
-    
+   
 expiration: String,
 
-    
+   
 card: String,
 
 
 plano: String,
 
-                                      
+                                     
 },
-    
+   
 // Capacitação
 
                                                                    
@@ -49,7 +47,7 @@ plano: String,
 const User1Model = mongoose.model('User1', user1Schema);
 //funções do scheema
 class User1{
-    
+   
      /**
    * Create a new User
    * @param {Object} transport - User Document Data
