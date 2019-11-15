@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const user1Schema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
    
 //variaveis do scheema
 fullname: String,
@@ -44,9 +44,9 @@ plano: String,
 
                                                                    
  { timestamps: true, static: false });
-const User1Model = mongoose.model('User1', user1Schema);
+const UserModel = mongoose.model('User', userSchema);
 //funções do scheema
-class User1{
+class User{
    
      /**
    * Create a new User
@@ -55,7 +55,7 @@ class User1{
    */
   static create(user) {
     return new Promise((resolve, reject) => {
-      User1Model.create(user).then((result) => {
+      UserModel.create(user).then((result) => {
         resolve(result._id);
       }).catch((err) => {
         reject(err);
@@ -65,4 +65,4 @@ class User1{
 }
 
 
-module.exports = User1;
+module.exports = User;
