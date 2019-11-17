@@ -2,7 +2,7 @@ var firebase = require('firebase');
 
 var express = require('express');
 var router = express.Router();
-const User1= require('../models/user1');
+const User= require('../models/user');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -31,12 +31,12 @@ router.get('/cap', function(req, res, next) {
 });
 
 router.post('/create',function(req, res, next){
-    const user1 = req.body.user1;
+    const user = req.body.user;
 
 
     
-    User1.create(user1).then((id) =>{
-        console.log(user1);
+    User.create(user).then((id) =>{
+        console.log(user);
         console.log("-----------------------------------");
         res.redirect('/catalog');
         console.log(id);
