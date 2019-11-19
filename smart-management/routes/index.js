@@ -6,16 +6,16 @@ const User= require('../models/user');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('catalog', { title: 'Express' });
+  res.render('catalog', { title: 'Catalogo' });
 });
 
 
 router.post('/', function(req, res, next) {
  console.log(req.body);
-  res.render('catalog', { title: 'Express' });
+  res.render('catalog', { title: 'Catalogo' });
 });
 router.get('/catalog', function(req, res, next) {
-  res.render('catalog', { title: 'Express' });
+  res.render('catalog', { title: 'Catalogo' });
 });
 
 router.get('/cadastro', function(req, res, next) {
@@ -23,8 +23,30 @@ router.get('/cadastro', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('PRIMEIRATELA', { title: 'cadastro' });
+  res.render('login', { title: 'login' });
 });
+
+router.post('/login', function(req, res, next) {
+ const user = req.body.user;
+ console.log(req.body);
+ firebase.auth().signInWithEmailAndPassword(user.Email, user.password).then((userfirebase)=>{
+        
+        console.log(userfirebase);
+        console.log("-----------------------------------");
+        res.redirect('/catalog');
+        
+        
+    
+    }).catch(function (error){
+        console.log(error);
+        console.error(error.message);
+        res.redirect('/login');
+        
+    });
+    
+    
+});
+
 
 router.get('/cap', function(req, res, next) {
   res.render('cap', { title: 'cap' });
@@ -32,20 +54,29 @@ router.get('/cap', function(req, res, next) {
 
 router.post('/create',function(req, res, next){
     const user = req.body.user;
-
-
-    
+    console.log(user);
+firebase.auth().createUserWithEmailAndPassword(user.Email, user.password).then((userfirebase)=>{
     User.create(user).then((id) =>{
         console.log(user);
         console.log("-----------------------------------");
         res.redirect('/catalog');
         console.log(id);
-        
+    alert('Bem vindo' + create_email.value);    
     }).catch((error) => {
         console.log(error);
         res.redirect('error');
     });
    
+        
+    }).catch(function (error){
+        console.log(error);
+        console.error(error.message);
+        alert('Falha ao cadastrar')
+    });
+    
+    
 });
+
+    
 
 module.exports = router;

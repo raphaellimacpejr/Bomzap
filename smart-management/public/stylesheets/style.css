@@ -7060,16 +7060,15 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.5cm; }
 
 .content-site {
-  background-image: linear-gradient(DodgerBlue, DarkBlue);
+  background-image: linear-gradient(DarkTurquoise, ForestGreen);
   color: white;
-  padding-top: 1px;
-  padding-bottom: 1px; }
+  border-radius: 50px 50px; }
 
-.footer-site {
-  background-color: #333333;
-  color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+.content-site-1 h3 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.content-site-1 h4 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .header-site {
   text-align: center;
@@ -7088,8 +7087,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 10px; }
+  padding-top: 70px;
+  padding-bottom: 0px; }
+
+.header-site1.1 {
+  background-size: 250px 250px; }
 
 .header-site2 {
   background-color: #000000;
@@ -7108,8 +7110,8 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
-  padding-top: 250px;
-  padding-bottom: 50px; }
+  padding-top: 100px;
+  padding-bottom: 20px; }
 
 .newsec1 {
   background-position: center top;
@@ -7120,5 +7122,167 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: center tops;
   background-attachment: fixed;
   border: 1px solid #333333; }
+
+.newsec3 input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  overflow: hidden;
+  fonte-size: 20px;
+  border-bottom: 1px solid turquoise;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  height: 35px; }
+
+.newsec3-1 h1 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.principal {
+  background-color: gray;
+  padding-top: 100px;
+  padding-bottom: 500px; }
+
+.a {
+  text-decoration: underline;
+  color: black; }
+
+.image-l1-site {
+  background-image: url(../images/papeldeparede_login.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.nomeqq1 {
+  color: black;
+  font-size: 18pt;
+  text-align: center; }
+
+.image-l3-site {
+  background-color: gray;
+  width: 200px;
+  float: left; }
+
+.image-l4-site {
+  margin-top: 60px;
+  width: 1125px;
+  height: 200px;
+  float: right;
+  border-color: blue; }
+
+.a[class="linkcadastro"] {
+  font-size: 18pt;
+  text-align: center;
+  color: black;
+  text-decoration: underline; }
+
+.nomeqq input[type='submit'] {
+  background-color: #56e041;
+  display: block;
+  height: 50px;
+  width: 350px;
+  margin: 5px;
+  border: 2px solid black;
+  font-size: 16pt;
+  padding: 10px 20px;
+  background-color: rgba 255, 255, 255, 0.4;
+  text-decoration-color: black; }
+
+.nomeqq input {
+  background-color: #white;
+  display: block;
+  height: 50px;
+  width: 350px;
+  margin: 5px;
+  border: 2px solid black;
+  font-size: 16pt;
+  padding: 10px 20px;
+  background-color: rgba 255, 255, 255, 0.4;
+  text-decoration-color: black; }
+
+.nomeqq0 h1 {
+  text-align: center;
+  padding: 20px;
+  color: black; }
+
+.principal1 {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(SeaGreen, Teal);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 40px;
+  padding-bottom: 0px; }
+
+.header-site1 a {
+  color: black; }
+
+.containerG1 img {
+  width: 80%; }
+
+.containerG {
+  background-image: url(../images/bolinha.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 50px 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.login-box h1 {
+  float: left;
+  font-size: 50px;
+  border-bottom: 6px solid green;
+  margin-bottom: 50px;
+  padding: 13px 0;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  fonte-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid green;
+  box-shadow: 1px 5px 10px green;
+  webkit-box-shadow: 7px 7px 7px green;
+  moz-box-shadow: 10px 10px 10px green; }
+
+.text2-box {
+  background-color: green;
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 50px; }
+
+.text2-box a {
+  color: black; }
+
+.textbox input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  float: left;
+  margin: 0 10px; }
+
+.btn {
+  border: 2px solid green;
+  border-radius: 10px 10px;
+  backrgound: none;
+  color: white;
+  font-size: 18px;
+  width: 120px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px 0; }
 
 /*# sourceMappingURL=style.css.map */

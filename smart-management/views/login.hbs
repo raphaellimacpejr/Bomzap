@@ -1,0 +1,113 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD7aY4C_iuZ8xm2kdBepdpZRxoEvOufoeM",
+    authDomain: "bomzap-f382c.firebaseapp.com",
+    databaseURL: "https://bomzap-f382c.firebaseio.com",
+    projectId: "bomzap-f382c",
+    storageBucket: "bomzap-f382c.appspot.com",
+    messagingSenderId: "294689862497",
+    appId: "1:294689862497:web:43fcffa8f8716b5d25cb20"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <section class="principal1">
+            <div class="login-box">
+                <section class="containerG0"></section>
+
+                <section class="containerG1">
+                <div class="container">
+                      <div class="row" >  
+                        <div class="col-sm"></div>
+                            <div class="col">
+                                <div class="caption text-center">
+                                    <img class="caption text-center"  src="images/Logo Bomzap.png"/>
+                                </div>
+                            </div>
+                          <div class="col-sm"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="container" >
+                    <div class="row">
+                        <div class="col-sm"></div>
+                       <section class="containerG">
+                            <div class="container">
+                    <div class="row">
+                        <div class="col-sm" ></div>
+                         <div class="caption text-center">
+                             <div class="col" >
+                                     <div class="fonte">
+                                         <h1>Login</h1>
+                                     </div>
+                                 </div>
+                        </div>
+                        <div class="col-sm" ></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm" ></div>
+                        <div class="col" >
+                            <form action="/login" method="post">
+                            <div class="caption text-center">
+                                <div class="textbox">
+                                    <input type="text" placeholder="Email" name="user[Email]" id="auth_email">
+                                </div>
+                                <div class="textbox">
+                                    <input type="password" placeholder="Password" name="user[password]" id="auth_password" >
+                                </div>
+                                <br>
+                                <div class="caixa">
+                                 <button type="submit" class="btn btn-dark" id="auth_emailPassButton">Sign In</button>
+                                
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="col-sm" ></div>
+                    </div>
+                </div>
+                    </section>
+                        <div class="col-sm"></div>
+                    </div>
+                </div>
+
+                 <br><br>
+
+            <section class="containerGf">    
+                <div class="container"></div>
+            </section>    
+
+
+                <div class="text2-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm" >
+                                <img class="caption text-center" src="images/quemsomos.png">
+                            </div>
+                            <div class="col" >
+                                <p style="font-family:sans-serif;">A Bomzap é o novo serviço de streaming que chega até você!<br/> A simplicidade da nossa plataforma e os  planos de assinatura vão facilitar sua maneira de assistir filmes.</p>
+                                <a href="cadastro" class="linkcadastro">Ainda não é nosso cliente? Saiba mais aqui!</a>
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- box-shadow: 5px 5px 10px green
+        webkit-box-shadow: 5px 5px 10px green
+        moz-box-shadow: 5px 5px 10px green-->
+    </section>
+    
+    <script src="../routes/middleware/auth.js"></script>
