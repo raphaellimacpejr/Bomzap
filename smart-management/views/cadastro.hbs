@@ -1,3 +1,4 @@
+
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
 
@@ -18,13 +19,11 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-
-<section class="header-site0" >
+ <section class="header-site0" >
         <div class="container"></div>
     </section>
 
     <section class="header-site1">
-            
         <div class="container" >
               <div class="row">  
                 <div class="col-sm"></div>
@@ -38,15 +37,8 @@
                   <div class="col-sm"></div>
                 </div>
         </div>
-
-    <br><br><br><br><br><br>
-<!--
-    <section class="header-site2" >
-        <div class="container"></div>
-    </section>
--->
-
-     <div class="container">
+        
+        <div class="container">
          <div class="row">
              <div class="content-site"><br><br>
                   <div class="container"  >
@@ -60,21 +52,24 @@
                                    </div>
                                    </section>    
                                </div>
-                          </div></div>
-                          <br><br>
-
-                          <div class="row" >
+                          </div>
+                      </div>
+                          
+                      <br><br>
+                      
+                      <div class="row" >
                               <br><br>
                               <div class="col-sm"></div>
                               <div class="col" >
                                   <div class="caption text-center">
                                       <h3 class="font-weight-lighter">Pay-per-view</h3>
-                                      </div>
-                                      <div class="caption text-center">
-                                      <h6 class="font-weight-light" >Para aqueles que assistem poucos filmes e não querem pagar nada sem usar, nesse plano você aluga os filmes apenas que irá ver, pagando individualmente por eles</h6><br>
-                                      </div>
-
-                              </div>
+                                  </div>
+                                  <div class="caption text-center">
+                                      <h6 class="font-weight-light" >Para aqueles que assistem poucos filmes e não querem pagar nada sem usar, nesse plano você aluga os filmes apenas que irá ver, pagando individualmente por eles</h6>
+                                      <br>
+                                  </div>
+                            </div>
+                          
                               <div class="col-sm-2" ></div>
 
                                   <div class="col">
@@ -87,157 +82,126 @@
 
                                   </div>
                               <div class="col-sm" ></div>
-
                       </div>
-
-
-                           <div class="row" >
+                      
+                      <div class="row" >
                                 <div class="col-sm" ></div>
-                           <div class="col" >
+                               <div class="col" >
                                   <div class="caption text-center">
-                                      <h6 class="font-weight-light">o preço pode variar de 20 a 30 reais por filme</h6>
+                                      <h6 class="font-weight-light">*o preço pode variar de 20 a 30 reais por filme</h6>
                                   </div>       
-                                  </div>
+                               </div>
                                <div class="col-sm-2" ></div>
                                <div class="col" >
                                <div class="caption text-center">
-                                      <h6 class="font-weight-light">o preço pode variar de 3 a 5 reais por filme</h6>
+                                      <h6 class="font-weight-light">*o preço pode variar de 3 a 5 reais por filme</h6>
                                   </div>
-                                   </div>
-                                <div class="col-sm" ></div>
-                           </div>
-            </div>
+                               </div>
+                               <div class="col-sm" ></div>
+                      </div>
+                 </div>
+                 
+                 <br><br><br>  
 
-
-        <br><br><br>  
-
-              <div class="container" >
-           <form action="/create" method="post">
-                    <div class="row" >
-                        <div class="container" >
-                            <section class="newsec3">
-                                <div class="col-sm-12" >
-                                    <div class="caption text-center" >
-                                <section class="newsec3-1">
-                                        <h1 class="font-weight-lighter">Cadastre-se</h1>
-                                        </section>
-                            </div>
-
-                        </div>
-                        <div class="container">
-                            <div class="row" >
-                        <div class="col-sm-5">
-                            <p class="text-center" >
-                                <label for="uname"><b>Nome completo</b></label>
-                                <br><input type="text" placeholder="Enter your name" style="text-align: center" name="user[fullname]" required>
-                            </p>
-                            <p class="text-center" >
-                            <label for="uname"><b>Email</b><br></label>
-                                <br> <input type="text" placeholder="Enter Email" style="text-align: center" name="user[Email]" id="create_email" required>
-                            </p>
-                            <p class="text-center">
-                                <label for="psw"><b>Senha</b></label>
-                                <br><input type="password" placeholder="Password" style="text-align: center" name="user[password]" id="create_password" required>
-                            </p>
-                            <p class="text-center">
-                        <label for="psw"><b>Telefone</b></label>
-                        <br><input type="text" placeholder="(DDD)xxxx-xxxx" style="text-align: center" name="user[cellphone]" required>
-                            </p>
-                            <p class="text-center">
-                                <label for="psw"><b>CPF</b></label>
-                                <br><input type="text" placeholder="CPF" style="text-align: center" name="user[cpf]" required>
-                            </p>
-                            <p class="text-center">
-                                <label for="psw"><b>RG</b></label>
-                                <br><input type="text" placeholder="xxxxxxxxxx" style="text-align: center" name="user[rg]" required>
-                            </p>
-                        </div>
-
-
-                        <div class="col-sm" ></div>
-                        <div class="col-sm-5" >
-                            <h5 class=" caption text-center"><b>Dados do cartão</b></h5>
-                            <p class="caption text-center" >
-                                <label for="uname"><b>Número do cartão</b></label>
-                                <br><input type="text" placeholder="Card number" style="text-align: center" name="user[card_number]" required>
-                            </p>
-                            <p class="text-center" >
-                                <label for="uname"><b>Nome do titular</b></label>
-                                <br><input type="text" placeholder="Card name" name="user[card_name]" style="text-align: center"required>
-                            </p>
-                            <p class="text-center" >
-                                <label for="uname"><b>Código de segurança</b></label>
-                                <br><input type="text" placeholder="Code number" style="text-align: center" name="user[security_code]" required>
-                            </p>
-                            <p class="text-center" >
-                                <label for="uname"><b>Expiração</b></label>
-                                <br><input type="text" placeholder="MM/AA" style="text-align: center" name="user[expiration]" required>
-                            </p>
-                            <p class="text-center" >
-                            <label for="uname"><b>Cartão</b></label>
-
-                            <select name="user[card]">
-                                <option value="Visa"> Visa </option>
-                                <option value="Mastercard"> Mastercard </option>
-                                <option value="Ello"> Ello </option>
-                                <option value="Santander">Santander</option>
-                                <option value="Nubank">Nubank</option>
-                            </select>
-                            </p>
-                            </div>
-
-                        </div>
-                            </div>
+                <div class="container" >
+                    <form action="/create" method="post">
+                        <div class="row" >
+                            <div class="container" >
+                                <section class="newsec3">
+                                    <div class="col-sm-12" >
+                                        <div class="caption text-center" >
+                                    <section class="newsec3-1">
+                                            <h1 class="font-weight-lighter">Cadastre-se</h1>
+                                    </section>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row" >
+                                            <div class="col-sm-5">
+                                                <p class="text-center" >
+                                                <label for="uname"><b>Nome completo</b></label>
+                                                <br><input type="text" placeholder="Enter your name" style="text-align: center" name="user[fullname]" required>
+                                            </p>
+                                            <p class="text-center" >
+                                            <label for="uname"><b>Email</b><br></label>
+                                                <br> <input type="text" placeholder="Enter Email" style="text-align: center" name="user[Email]" id="create_email" required>
+                                            </p>
+                                            <p class="text-center">
+                                                <label for="psw"><b>Senha</b></label>
+                                                <br><input type="password" placeholder="Password" style="text-align: center" name="user[password]" id="create_password" required>
+                                            </p>
+                                            <p class="text-center">
+                                        <label for="psw">
+                                            <b>Telefone</b></label>
+                                                <br>
+                                                <input type="text" placeholder="(DDD)xxxx-xxxx" style="text-align: center" name="user[cellphone]" required>
+                                            </p>
+                                            <p class="text-center">
+                                                <label for="psw"><b>CPF</b></label>
+                                                <br><input type="text" placeholder="CPF" style="text-align: center" name="user[cpf]" required>
+                                            </p>
+                                            <p class="text-center">
+                                                <label for="psw"><b>RG</b></label>
+                                                <br><input type="text" placeholder="xxxxxxxxxx" style="text-align: center" name="user[rg]" required>
+                                            </p>
+                                            </div>
+                                            
+                                            <div class="col-sm"></div>
+                                            <div class="col-sm-5">
+                                                 <h5 class=" caption text-center"><b>Dados do cartão</b></h5>
+                                            <p class="caption text-center" >
+                                                <label for="uname"><b>Número do cartão</b></label>
+                                                <br><input type="text" placeholder="Card number" style="text-align: center" name="user[card_number]" required>
+                                            </p>
+                                                <p class="text-center" >
+                                                    <label for="uname"><b>Nome do titular</b></label>
+                                                    <br><input type="text" placeholder="Card name" name="user[card_name]" style="text-align: center"required>
+                                                </p>
+                                                <p class="text-center" >
+                                                <label for="uname"><b>Código de segurança</b></label>
+                                                <br><input type="text" placeholder="Code number" style="text-align: center" name="user[security_code]" required>
+                                                </p>
+                                                <p class="text-center" >
+                                                    <label for="uname"><b>Expiração</b></label>
+                                                    <br><input type="text" placeholder="MM/AA" style="text-align: center" name="user[expiration]" required>
+                                                </p>
+                                                <p class="text-center">
+                                                    <label for="uname"><b>Cartão</b></label>
+                                                    <select name="user[card]">
+                                                        <option value="Visa"> Visa </option>
+                                                        <option value="Mastercard"> Mastercard </option>
+                                                        <option value="Ello"> Ello </option>
+                                                        <option value="Santander">Santander</option>
+                                                        <option value="Nubank">Nubank</option>
+                                                    </select>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </section>
+                            </div>
                         </div>
-
-                        </div>
-
-
+                        
                         <div class="container" >
                             <div class="text-center" >
-                            <br>
-                            <input type="radio" name="user[plano]" value="Mensal"> Mensal
-                            <input type="radio" name="user[plano]" value="PPV"> Pay-per-view
-                        <br>                    <br>
-                                
-                                
-                        
-
-                               <button type="submit" class="btn btn-dark" id="createUserButton">Cadastrar</button><br><br>
-
+                                <br>
+                                <input type="radio" name="user[plano]" value="Mensal"> Mensal
+                                <input type="radio" name="user[plano]" value="PPV"> Pay-per-view
+                                <br>
+                                <br>
+                                <button type="submit" class="btn btn-dark" id="createUserButton">Cadastrar</button>
+                                <br><br>
                                 <a href="Login" class="linkcadastro">Já é nosso cliente? Faça Login aqui!</a>
-                                
-                              <br>
+                                <br>
                             </div>
-                     <br><br>
+                            <br><br>
                         </div>
-                   </form>
-
-            </div>
-                          </div>
+                    </form>
+                 </div>
+             </div>
          </div>
-            </div>
+        </div>
     </section>
-    <!--
-        <section class="header-site3">
-                      <div class="container"></div>
-        </section>-->
-
-        <section class="img-site">
-                <div class="container" >
-                    <div class="row">
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4" >
-                            <div class="text-right">
-                                <img src="images/gestov.png">
-                            </div>
-                        </div>
-                    </div>
-            </div><br><br>
-        </section>
 
         <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script src="public/javascripts/jquery.js"></script>
