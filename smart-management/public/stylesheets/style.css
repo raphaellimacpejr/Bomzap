@@ -7051,7 +7051,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: 'fonte_logo';
   font-size: 2cm;
   color: green;
-  padding-top: 1.5cm;
+  padding-top: 2cm;
   padding-bottom: 1cm; }
 
 .Titulos_filme {
@@ -7060,26 +7060,20 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.5cm; }
 
 .content-site {
-  background-image: linear-gradient(DodgerBlue, DarkBlue);
+  background-image: linear-gradient(DarkTurquoise, ForestGreen);
   color: white;
-  padding-top: 1px;
-  padding-bottom: 1px; }
+  border-radius: 50px 50px; }
 
-.footer-site {
-  background-color: #333333;
-  color: #ffffff;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+.content-site-1 h3 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.content-site-1 h4 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 .header-site {
   text-align: center;
   width: 10%;
   height: 10%; }
-
-.header-site0 {
-  background-color: #000000;
-  padding-top: 05px;
-  padding-bottom: 05px; }
 
 .header-site1 {
   background-image: url(../images/17.jpg);
@@ -7088,37 +7082,114 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 10px; }
+  padding-top: 50px;
+  padding-bottom: 80px; }
 
-.header-site2 {
-  background-color: #000000;
-  padding-top: 05px;
-  padding-bottom: 05px; }
-
-.header-site3 {
-  background-color: #000000;
-  padding-top: 05px;
-  padding-bottom: 05px; }
-
-.img-site {
-  background-image: url(../images/17.jpg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
-  padding-top: 250px;
-  padding-bottom: 50px; }
+.header-site1 img {
+  width: 80%; }
 
 .newsec1 {
   background-position: center top;
   background-attachment: inherit;
   border: 1px solid #333333; }
 
-.newsec2 {
-  background-position: center tops;
+.newsec3 input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  overflow: hidden;
+  fonte-size: 20px;
+  border-bottom: 1px solid turquoise;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  height: 35px; }
+
+.newsec3-1 h1 {
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.header-site1 a {
+  color: black; }
+
+.principal {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(SeaGreen, Teal);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
-  border: 1px solid #333333; }
+  padding-top: 50px;
+  padding-bottom: 0px; }
+
+.containerG1 img {
+  width: 80%; }
+
+.containerG {
+  background-image: url("/images/bolinha.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 50px 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.login-box h1 {
+  float: left;
+  color: MediumSeaGreen;
+  font-size: 50px;
+  border-bottom: 6px solid green;
+  margin-bottom: 50px;
+  padding: 13px 0;
+  text-shadow: black 0.1em 0.1em 0.2em; }
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  fonte-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid green;
+  box-shadow: 1px 5px 10px green;
+  webkit-box-shadow: 7px 7px 7px green;
+  moz-box-shadow: 10px 10px 10px green; }
+
+.text2-box {
+  background-color: green;
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 50px; }
+
+.text2-box a {
+  color: black; }
+
+.textbox input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  float: left;
+  margin: 0 10px; }
+
+.btn {
+  border: 2px solid green;
+  border-radius: 10px 10px;
+  backrgound: none;
+  color: white;
+  font-size: 18px;
+  width: 120px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 12px 0; }
+
+.fundo_erro {
+  font-family: 'fonte_logo';
+  font-size: 2cm;
+  color: black;
+  padding-top: 2cm;
+  padding-bottom: 1cm; }
 
 /*# sourceMappingURL=style.css.map */
