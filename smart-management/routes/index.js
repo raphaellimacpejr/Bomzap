@@ -26,9 +26,14 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'login' });
 });
 
-router.get('/error', function(req, res, next) {
-  res.render('error', { title: 'error' });
+router.get('/error_login', function(req, res, next) {
+  res.render('error_login', { title: 'error_login' });
 });
+
+router.get('/error_cadastro', function(req, res, next) {
+  res.render('error_cadastro', { title: 'error_cadastro' });
+});
+
 
 //Auteticação
 
@@ -46,7 +51,7 @@ router.post('/login', function(req, res, next) {
     }).catch(function (error){
         console.log(error);
         console.error(error.message);
-        res.redirect('/error');
+        res.redirect('/error_login');
         
     });
     
@@ -70,7 +75,7 @@ firebase.auth().createUserWithEmailAndPassword(user.Email, user.password).then((
     alert('Bem vindo' + create_email.value);    
     }).catch((error) => {
         console.log(error);
-        res.redirect('/error');
+        res.redirect('/error_cadastro');
     });
    
         
